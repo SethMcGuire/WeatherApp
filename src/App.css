@@ -1,0 +1,12 @@
+body {
+    background: skyblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+#address {
+    width: 300px;
+    margin-left: 39%;
+}
