@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 class Homepage extends Component {
+
   // constructor to initialize state
   constructor(props) {
     super(props);
@@ -18,7 +19,8 @@ class Homepage extends Component {
     this.setState({ address: e.target.value });
   }
   // execute search
-  doSearch = () => {
+  doSearch = (e) => {
+    e.preventDefault()
     const encodedAddress = encodeURIComponent(this.state.address);
     const geocodeUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodedAddress}`;
 
@@ -64,16 +66,19 @@ class Homepage extends Component {
             temperature: {temperature}<br />
             feels like: {apparentTemperature}
           </div>
-        
+        <form>
           <div id="address" className="form-group">
             <input className="form-control" type="text" name="address" placeholder="Location" value={address} onChange={this.onChangeAddress} />
           </div>
           <div id="address" className="form-group">
             <button className="btn btn-lg btn-primary btn-block" onClick={this.doSearch}>Search!</button>
           </div>
+        </form>
       </div>
     );
   }
 }
+
+
 
 export default Homepage;
