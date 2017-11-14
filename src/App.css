@@ -10,3 +10,63 @@ h1 {
     width: 300px;
     margin-left: 39%;
 }
+
+.weather-info {
+    background-color: skyblue;
+    margin-top: -16%;
+    margin-left: 39%;
+    font-size: 32px;
+    color: white;
+    position: absolute;
+}
+
+img {
+    position: absolute;
+    margin-top: -10%;
+    width: 150px;
+}
+
+#weatherPics {
+    margin-top: 18%;
+}
+
+#day {
+    margin-left: 10%;
+    margin-top: -18%;
+    width: 300px;
+}
+
+#rainy {
+    margin-top: -32%;
+    width: 175px;
+}
+
+#thunder {
+    margin-left: 65%;
+    width: 190px;
+}
+
+#snowy {
+    margin-top: -24%;
+    margin-left: 73%;
+    width: 250px;
+}
+
+#partly-cloudy {
+    margin-top: 4%;
+    margin-left: 6%;
+    width: 180px;
+}
+
+h1 {
+    color: white;
+}
+
+hr {
+    width: 300px;
+    margin-left: 0%;
+}
+
+#address-form {
+    position: absolute;
+}
