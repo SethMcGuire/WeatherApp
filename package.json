@@ -1,5 +1,5 @@
 {
-  "name": "fuckyou",
+  "name": "WeatherApp",
   "version": "0.1.0",
   "private": true,
   "main": "cors.js",
